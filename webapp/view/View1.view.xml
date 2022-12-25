@@ -1,0 +1,31 @@
+<mvc:View controllerName="simplecalculator1.simplecalculatorproject.controller.View1" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox alignContent="Center" alignItems="Center">
+                <f:SimpleForm editable="true" alignItems="Center" alignContent="Center" title="Calculator" width="350px" class=".sapMFlexBoxBGTransparent">
+                    <f:content>
+                        <VBox alignItems="Center">
+                            <HBox>
+                                <Label text="Enter First No.-" />
+                                <Input value="" id="inp1" width="100px" height="150px" />
+                            </HBox>
+
+                            <HBox>
+                                <Label text="Enter Second No." />
+                                <Input value="" id="inp2" width="100px" height="150px" />
+                            </HBox>
+                            <HBox>
+                                <Button type="Emphasized" press="onPressAdd" text="Add +" width="100px" />
+                                <Button type="Emphasized" press="onPressSub" text="Sub -" width="100px" />
+                            </HBox>
+                            <HBox>
+                                <Button type="Emphasized" press="onPressMul" text="Mul *" width="100px" />
+                                <Button type="Emphasized" press="onPressDiv" text="Div /" width="100px" />
+                            </HBox>
+                        </VBox>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
